@@ -41,10 +41,10 @@ puzzle.app = function() {
 
         });
 
-        lifecycle.start()
-        .then(function () {
-            lifecycle.loop();
-        });
+        lifecycle.start();
+        //.then(function () {
+        //    lifecycle.loop();
+        //});
 
 
 
