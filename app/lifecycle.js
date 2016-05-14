@@ -144,7 +144,7 @@ puzzle.lifecycle = function (engine, ui, runInterval) {
             var cells = engine.getRandomMove();
             move(cells[0].slot, cells[1].slot);
         });
-        return delay(2000, stopRunning);
+        return delay(3000, stopRunning);
     };
 
     this.start = function () {

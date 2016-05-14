@@ -78,7 +78,7 @@ puzzle.loadImageFromLocation = function () {
     var match = /\?img=/.exec(window.location.href);
     if (match) {
         var index = window.location.href.indexOf('=', match.index);
-        var url = window.location.href.substr(index + 1);
+        var url = decodeURIComponent(window.location.href.substr(index + 1));
         if (url) {
             return puzzle.loadImage(url);
         }
