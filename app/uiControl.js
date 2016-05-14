@@ -174,11 +174,3 @@ puzzle.uiControl = function (containerSelector, imageElement, widthCount, height
 };
 
 
-puzzle.loadImage = function (url) {
-    var deferred = Q.defer();
-    var image = $('<img />', {src: url, class: 'pz-content-bg'});
-    image.load(function (e) {
-        deferred.resolve(image);
-    });
-    return deferred.promise;
-};
