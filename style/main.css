@@ -1,0 +1,101 @@
+body { background-color: #DDDDDD; margin: 10px;
+    font-family: verdana; }
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+.pz-center {
+    width:600px;
+    margin: 0 auto;
+}
+.pz-center input {
+    padding: 10px;
+    outline: none;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+    border: solid 1px #C9C9C9;
+    margin-bottom: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.pz-center input:focus { border: solid 1px #CCCCCC; background-color: rgba(255, 255, 255, 0.7); }
+
+.pz-center .pz-container {
+    position: relative;
+    width:600px; height:600px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.pz-container .pz-container-bg {
+    background-color: #EEEEEE;
+    position: absolute;
+    overflow: hidden;
+    width:100%; height:100%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.pz-center .pz-container img.pz-content-bg {
+    position: absolute;
+    opacity: .08;
+    vertical-align: middle;
+}
+
+.pz-overlay {
+    z-index: 10;
+    transition: visibility 0.2s, opacity 0.2s linear;
+}
+
+.pz-center .puzzle-slot {
+    position: absolute;
+    border:solid 1px transparent;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition:top  0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), left 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 0;
+}
+
+.puzzle-slot.hidden {
+    transition: opacity 0.2s cubic-bezier(0.95, 0.05, 0.795, 0.035), visibility 0.2s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.puzzle-slot .puzzle-slot-img {
+    position: absolute;
+}
+
+.puzzle-slot .label {
+    font-family: verdana;
+    display: table;
+    position: absolute;
+    width:100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.puzzle-slot .label h1 {
+    margin: 0; padding: 0;
+    display: table-cell;
+    text-align: center;
+}
+
+.pz-btn-shuffle, .pz-btn-revert {
+    border: solid 1px #CCCCCC;
+    background-color: rgba(255, 255, 255, 0.7);
+    outline: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin-top: 10px;
+    width: 297px;
+}

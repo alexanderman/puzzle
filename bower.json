@@ -1,0 +1,14 @@
+{
+  "name": "Puzzle",
+  "authors": [
+    "alexanderman <alexander.shnirman@gmail.com>"
+  ],
+  "description": "game",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "q": "1.0.1"
+  }
+}
